@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+		<title>JB Music Instruction</title>
+		<link rel="stylesheet" type="text/css" href="../css/screen_styles.css" />
+		<link rel="stylesheet" href="../css/piano-1.css" />
+		<link rel="stylesheet" type="text/css" href="../css/screen_layout_large.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:320px)" href="../css/screen_layout_small.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:480px)" href="../css/screen_layout_med_small.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:800px)" href="../css/screen_layout_medium.css" />
+		<!--[if lt IE 9]>
+			<script src="http://htmlshiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<!--<script src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+		<script type="JavaScript" src="../js/piano-1.js"></script>
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<a class="logo" href="#"></a>
+			</header>
+			<nav id="navtop">
+				<a href="index.html">Home</a>
+				<a href="register.html" alt="Register Here">Register</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="resources.html">Resources</a>
+				<a href="piano-1.html" alt="piano"><img src="../images/pianothumb.png" />&nbsp;&nbsp;Piano</a>
+				
+			</nav>
+			<div class="container">
+				<div class="cont left">
+					<div class="content">
+						<h3>Site Navigation</h3>
+						
+						<a href="index.html">Home</a>
+						<a href="register.html" alt="Register Here">Register</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="resources.html">Additional Resources</a>
+						
+						<h4>Instrument</h4>
+						<a href="piano-1.html" alt="piano"><img src="../images/pianothumb.png" />&nbsp;&nbsp;Piano</a>
+									
+						<h4>Musical Reference</h4>
+						<a href="#">Circle of Fifths</a>
+						<a href="#">Scales</a>
+						<a href="#">Chord Positions</a>
+						
+					</div>
+				</div>
+				<div class="cont main">
+					<div class="content">
+						<h3>Getting Familiar with the Notes</h3><br>
+						<p>Notes are the building blocks of music. Those notes are seen on sheet music, but how do you understand what the notes mean?  First 
+						let's take a look at a simple section of music.</p>
+						<div class="canvas_container">
+							<canvas id="staff" height="100"width="300" border="1px solid #000"></canvas><script src="../js/piano-1.js"></script>
+						</div>
+						<p>The area above is called a staff.  In this example, we have the staff split into 2 measures.  Each measure contains 4 beats.  The first 4 notes
+						seen here are called quarter notes, since each note corresponds to a single beat.  In the 2nd measure, the first two notes are eighth notes.  Eighth
+						notes are half a beat long.  As you can see, 2 eighth notes = 1 quarter note. <br><br>To visualize how the notes relate to each other, look at the diagram below. </p>
+						<div class="diagram_container">
+							<img class="norm" src="../images/note-lengths.png" /><img class="medium" src="../images/note-lengths_med.png" /><img class="small" src="../images/note-lengths_small.png" /><br>
+							<img class="norm" src="../images/whole-note.png" /><img class="medium" src="../images/whole-note_med.png" /><img class="small" src="../images/whole-note_small.png" />
+							&nbsp;&nbsp;<span class="diagram">=</span>&nbsp;&nbsp;
+							<img class="norm" src="../images/half-note.png" /><img class="medium"src="../images/half-note_med.png" /><img class="small" src="../images/half-note_small.png" />
+							<img class="norm" src="../images/half-note.png" /><img class="medium" src="../images/half-note_med.png" /><img class="small" src="../images/half-note_small.png" /><br>
+							<img class="norm" src="../images/half-note.png" /><img class="medium" src="../images/half-note_med.png" /><img class="small" src="../images/half-note_small.png" />
+							&nbsp;&nbsp;<span class="diagram">=</span>&nbsp;&nbsp;
+							<img class="norm" src="../images/quarter-note.png" /><img class="medium" src="../images/quarter-note_med.png" /><img class="small" src="../images/quarter-note_small.png" />
+							<img class="norm" src="../images/quarter-note.png" /><img class="medium" src="../images/quarter-note_med.png" /><img class="small" src="../images/quarter-note_small.png" /><br>
+							<img class="norm" src="../images/quarter-note.png" /><img class="medium" src="../images/quarter-note_med.png" /><img class="small" src="../images/quarter-note_small.png" />
+							&nbsp;&nbsp;<span class="diagram">=</span>&nbsp;&nbsp;
+							<img class="norm" src="../images/eighth-note.png" /><img class="medium" src="../images/eighth-note_med.png" /><img class="small" src="../images/eighth-note_small.png" />
+							<img class="norm" src="../images/eighth-note.png" /><img class="medium" src="../images/eighth-note_med.png" /><img class="small" src="../images/eighth-note_small.png" /><br>
+							<img class="norm" src="../images/eighth-note.png" /><img class="medium" src="../images/eighth-note_med.png" /><img class="small" src="../images/eighth-note_small.png" />
+							&nbsp;&nbsp;<span class="diagram">=</span>&nbsp;&nbsp;
+							<img class="norm" src="../images/sixteenth-note.png" /><img class="medium" src="../images/sixteenth-note_med.png" /><img class="small" src="../images/sixteenth-note_small.png" />
+							<img class="norm" src="../images/sixteenth-note.png" /><img class="medium" src="../images/sixteenth-note_med.png" /><img class="small" src="../images/sixteenth-note_small.png" />
+						</div>
+							<p>Now that we can determine the type of note, we will look at how they are placed on the staff.  Each line and space on the staff corresponds to a note.  The lines, beginning from the bottom can easily be 
+							remembered as <em><strong>E</strong>very <strong>G</strong>ood <strong>B</strong>oy <strong>D</strong>oes <strong>F</strong>ine</em>.  That is E - G - B - D - F.  The spaces in the treble clef can be remembered as <em><strong>FACE</strong></em>, or F - A - C - E. <br><br> 
+							
+							The bass clef is a little different.  The spaces are A - C - E - G, or <em><strong>A</strong>ll <strong>C</strong>ars <strong>E</strong>at <strong>G</strong>as</em> and the lines are G - B - D - F - A, or <em><strong>G</strong>ood <strong>B</strong>urritos <strong>D</strong>on't <strong>F</strong>all <strong>A</strong>part</em>.<br><br>
+							See the example below:</p>
+						<div class="diagram_container">
+							<img class="norm" src="../images/notespeller.png" /><img class="medium" src="../images/notespeller_med.png" /><img class="small" src="../images/notespeller_small.png" />
+						</div>
+						<p>All notes have a letter assigned to them. They range from A - G, repeating over and over.  For example:</p>
+						<div class="diagram_container">
+							<img class="norm" src="../images/piano-keys.png" /><img class="medium" src="../images/piano-keys_med.png" /><img class="small" src="../images/piano-keys_small.png" />
+						</div>
+						<p>The first thing you should notice is the layout of the keys.  They are layed out in a patter of 7 white keys and 5 black keys.  This pattern repeats along the entire length of the piano.  From the
+						beginning of one set of keys and ending at the start of the next set, an <em>interval</em> is formed. Intervals are just the musical distances between two sounds.  This particular interval is called
+						an octave.  (See below)  </p>
+						<div class="diagram_container">
+							<image class="norm" src="../images/octave-1.png" /><image class="medium" src="../images/octave-1_med.png" /><image class="small" src="../images/octave-1_small.png" /><br><p id="caption">Octave from C to C</p>
+						</div>
+	
+						<p>You may be wondering what the black keys are since all the white keys are labeled with their note letter.  The black keys can be either sharp(&#9839;) or flat(&#9837;).  We will use 
+						the 'D' note for this example.  The black key directly to the right of the 'D' key would be called D&#9839; and the black key directly to the left of the 'D' key is D&#9837;.  Since D&#9839;
+						is to the left of the 'E' key, it is also E&#9837;.  Don't worry if this seems a little confusing, as you play and learn more, it will become easier to identify the keys.
+						
+						
+						<div class="prev_next">
+						<a rel="prev" href="index.html">Back to Home</a>						
+						<a href="piano-2.html" >Next Page</a>
+						
+						</div>
+		
+						
+					</div>
+				</div>
+				<div class="cont right">				
+					<div class="content">
+						
+					</div>
+				</div>
+				<nav id="mobilenav">
+					<a href="index.html">Home</a>
+					<a href="register.html" alt="Register Here">Register</a>
+					<a href="contact.html">Contact Us</a>
+					<a href="resources.html">Additional Resources</a>
+					<a href="piano-1.html" alt="piano"><img src="../images/pianothumb.png" />&nbsp;&nbsp;Piano</a>
+					
+				</nav>
+				<div class="clear-fix"></div>
+			</div>
+			<footer>				
+				<section id="footleft">
+					<h3>External Links:</h3>
+					<a href="http://www.music-theory.com/resources.html">Music Theory Online</a>
+					<a href="https://www.ultimate-guitar.com/lessons/for_beginners/learning_music_theory_the_beginning.html">Ultimate Guitar</a>
+					<a href="http://www.guitar-music-theory.com/theory/">Guitar Music Theory</a>
+				</section>
+				<section id="footmid">
+					<h3>Internal Links:</h3>
+					<a href="index.html" alt="Home">Home</a>
+					<a href="register.html" alt="Register">Register</a>
+					<a href="contact.html" alt="contact">Contact Us</a>
+				</section>
+				<section id="footright">
+					<h3>Musical Reference</h3>
+					<a href="#">Circle of Fifths</a>
+					<a href="#">Scales</a>
+					<a href="#">Chord Positions</a>
+				<section>
+				&copy;2015 Jeremy Blanchard				
+			</footer>
+		</div>
+	</body>
+</html>

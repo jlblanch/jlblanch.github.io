@@ -1,0 +1,51 @@
+.canvas_container{
+	width:100%;
+	min-height:50px;
+	height:100px;
+		
+}
+.diagram_container{
+	width:100%;
+	text-align:center;
+	padding: 20px 0px 20px 0px;
+	color: black;
+	
+}
+#staff{display:block;}
+.diagram{
+	font-size:3.5em;
+}
+.prev_next{
+	text-align:center;
+	width:100%;	
+	font-size: 1.5em;
+	padding: 20px 0px 20px 0px;
+}
+.prev_next a {
+	
+	display:inline;	
+}
+[rel=prev] {
+	float:left;
+	
+}
+[rel=next] {
+	float:right;
+	color: white;text-align:right;
+}
+
+.prev_next a:visited{
+	color:gray;
+}
+#caption{
+	text-align:center;
+	font-size:60%;
+	font-weight:bold;
+}
+.table_container table{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	
+}
+td, th{ text-align:center;}

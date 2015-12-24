@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+		<title>Registration Form</title>
+		<link rel="stylesheet" href="../css/screen_styles.css" />
+		<link rel="stylesheet" href="../css/register.css" />
+		<link rel="stylesheet" type="text/css" href="../css/register_layout_large.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:320px)" href="../css/screen_layout_small.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:480px)" href="../css/screen_layout_med_small.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:775px)" href="../css/register_layout_medium.css" />
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		
+		<script>
+			// function to display contact info alert message
+			
+			function moreinfo() {
+				var contactname = "Jeremy Blanchard";
+				var contactaddress1 = "1340 E. Main St";
+				var contactcity = "Tulsa";
+				var contactstate = "OK";
+				var contactphone = "(918)440-9876";
+				var message = "Contact us at: \n" + contactname + "\n" + contactaddress1 + "\n" + contactcity + ", " + contactstate + "\n" + contactphone + "\n \n" + "We would love to hear from you!";
+				alert(message);
+
+			}
+			//save form data as object
+			function userdata(firstname, lastname, email, phone, userdesc) {							
+				this.firstname = firstname;
+				this.lastname = lastname;
+				this.email = email;
+				this.phone = phone;
+				this.userdesc = userdesc;
+				this.PrintUserInfo = PrintUserInfo;
+
+			}
+
+			//function to validate form data
+			function validate() {
+				with(document.contact_form) {
+					userinfo = new userdata(firstname.value, lastname.value, email.value, phone.value, userdesc.value)
+				}
+				with(userinfo) {
+					
+					if (firstname == null || firstname == "") {
+						alert("You must enter your first name.")
+						return false;
+					}
+					if (lastname == null || lastname == "") {
+						alert("You must enter your last name.")
+						return false;
+					}
+					if (IsEmail(email) == false) {
+						alert("The email entered is invalid.  Please ensure the format of your email is name@example.com")
+						return false;
+					}
+					if (IsPhone(phone) == false){
+						alert("You must enter a phone number in order for us to contact you.");
+						return false;
+					}
+					if (userdesc == null || userdesc == "") {
+						alert("You must enter a description.")
+						return false;
+					}
+					//decide which UserInfo to print
+
+					userinfo.PrintUserInfo();
+				}
+				return true;
+			}
+
+			function IsEmail(x) {
+
+				if (x.length < 6 || x.indexOf("@", 0) == -1) {
+					return false;
+				} else {
+					return true;
+				}
+			}
+			function IsPhone(y) {
+				var phoneno= /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+				if(y.match(phoneno)){
+					return true;
+				}
+				else{
+					return false;
+				}				
+			}
+			function PrintUserInfo() {
+				alert("Thank you "+ this.firstname + " " + this.lastname + " for your feedback.  We will contact you at " + this.email + " or " + this.phone + " within the next 24 hours.");
+			}
+				
+							
+
+			//function to reset the form data and set focus to username input field
+			function resetForm() {
+				document.getElementById("contact_form").reset();
+				document.getElementById("firstname").focus();
+			}
+			
+			//function to add event listeners to all 'required' input fields
+					
+			
+			//create event listeners for tooltips
+			function showTips(){
+				requiredTips = document.getElementsByClassName("tips");
+				for (var i=0;i<requiredTips.length;i++){
+					requiredTips[i].addEventListener('mouseover',tipMe,false);
+				}
+			}
+			//function called by mouseover event listener to determine appropriate tooltip
+			function tipMe(e){
+				if(e.target.id=="tip1"){
+					e.target.title="You must enter your full First Name. \n Example:  John or Mary";
+				}
+				if(e.target.id == "tip2"){
+					e.target.title="You must enter your full last name. \n Example:  Smith or Van Morrison";
+				}
+				if(e.target.id == "tip3"){
+					e.target.title="You must enter a valid email address.  \n Example:  john_smith@example.com";
+				}
+				if(e.target.id == "tip4"){
+					e.target.title="Your phone number must be 10 digits. \n Example: 123-456-7890";
+				}
+				if(e.target.id == "tip5"){
+					e.target.title="You must enter your comments or questions in this field. \n Example: I would like more information on class schedule.";
+				}
+			}
+			
+			// activates the event listeners for input field alerts
+			window.addEventListener('load',showTips,false);	
+			
+		</script>
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<a class="logo" href="#"></a>
+			</header>
+			<nav id="navtop">
+				<a href="index.html">Home</a>
+				<a href="register.html">Register</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="resources.html">Resources</a>
+			</nav>
+			<div id="container">
+				
+				<div class="content">
+					
+					<form class="contact_form" id="contact_form" action="" method="post" name="contact_form" onsubmit="validate()" novalidate>
+						<ul>
+							<li>
+								<h2>Contact Us:</h2>
+								<span class="required_notification">* Denotes Required Fields</span>
+							</li>							
+							<li class="required">
+								<label for="firstname">First Name:</label>
+								<input type="text" id="firstname" />
+								<img class="tips" id="tip1" src="../images/question_mark.png" alt="User Tip" />
+							</li>
+							<li class="required">
+								<label for="lastname">Last Name:</label>
+								<input type="text" id="lastname" />
+								<img class="tips" id="tip2" src="../images/question_mark.png" alt="User Tip" />
+							</li>
+							<li class="required">
+								<label for="email">Email:</label>
+								<input type="email" id="email" placeholder="john_smith@example.com" />
+								<img class="tips" id="tip3" src="../images/question_mark.png" alt="User Tip" />
+							</li>
+							<li class="required">
+								<label for="phone">Phone</label>
+								<input type="tel" id="phone" />
+								<img class="tip4" src="../images/question_mark.png" alt="User Tip" />
+							</li>
+							<li class="required">
+								<label for="userdesc">Feedback:</label>
+								<textarea id="userdesc" cols="40" rows="6" required></textarea>
+								<img class="tips" id="tip5" src="../images/question_mark.png" alt="User Tip" />
+							</li>
+							<li>
+								<button class="submit" type="submit">Submit Form</button>
+								<!-- Reset button to clear all form data -->
+								<!-- When form data is clear, set focus back to first form field. -->
+								<button formnovalidate type="button" class="moreinfo" onclick="resetForm()">Reset Form</button>
+								<!-- Button to pop up alert message with contact information // Change button to add p to display contact info -->
+								<button formnovalidate type="button" class="moreinfo" onclick="moreinfo()">Contact Information</button>
+							</li>
+						</ul>
+					</form>
+					
+				</div>
+				<nav id="mobilenav">
+					<a href="index.html">Home</a>
+					<a href="register.html" alt="Register Here">Register</a>
+					<a href="contact.html">Contact Us</a>
+					<a href="resources.html">Additional Resources</a>
+					<a href="piano-1.html" alt="piano"><img src="../images/pianothumb.png" />&nbsp;&nbsp;Piano</a>
+					<a href="guitar-1.html"><img src="../images/guitarthumb.png" />&nbsp;&nbsp;Guitar</a>
+				</nav>
+				<div class="clear-fix"></div>
+			</div>
+			<footer>
+				<section id="footleft">
+					<h3>External Links:</h3>
+					<a href="http://www.music-theory.com/resources.html">Music Theory Online</a>
+					<a href="https://www.ultimate-guitar.com/lessons/for_beginners/learning_music_theory_the_beginning.html">Ultimate Guitar</a>
+					<a href="http://www.guitar-music-theory.com/theory/">Guitar Music Theory</a>
+				</section>
+				<section id="footmid">
+					<h3>Internal Links:</h3>
+					<a href="index.html">Home</a>
+					<a href="register.html">Register</a>
+					<a href="contact.html">Contact Us</a>
+				</section>
+				<section id="footright">
+					<h3>Musical Reference</h3>
+					<a href="#">Circle of Fifths</a>
+					<a href="#">Scales</a>
+					<a href="#">Chord Positions</a>
+				</section>
+				&copy;2015 Jeremy Blanchard					
+			</footer>				
+		</div>	
+	</body>
+</html>

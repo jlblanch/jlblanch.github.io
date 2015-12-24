@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* Layout Medium Screens */
+
+header {
+	height: 125px;
+	background: url(../images/bghead_med_small.jpg) no-repeat right 0px;
+}
+header a.logo {
+	width: 120px;
+	height: 55px;
+	top: 20px;
+	right: 20px;
+	background-image: url(../images/logo_med_small.png);
+}
+nav {
+	display: block;
+	position: static;
+	padding: 5px 0px 5px 0px;
+	background-color: #aaa;
+}
+nav a {
+	color: #f49357;
+	display: inline-block;
+	margin: 15px;
+	padding: 0px;
+	border: 1px solid #a6abc5;
+	
+	/*-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;*/
+}
+
+nav a:hover {
+	color: #009eff;
+	background-color: rgba(255,255,255,.15);
+}
+nav a:visited{color:#f6a26f;}
+
+.container { padding: 0px 20px 15px 20px; }
+.container .cont{ background-position: 0px 0px; }
+.container .cont .content { padding: 20px 20px 20px 20px; }
+
+body { background-image: none; }
+footer{
+	padding-left: 40px;	
+	text-align:center;
+}
+#footleft,#footmid,#footright{
+	float:left;
+	width:33%;
+}
+.imgcont{width:100%;}
+.cont.main,.cont.right{
+	width:100%;}
+#mobilenav,#sheetnorm,.cont.left,#guitartab,.norm,.medium{display:none;}
+.small{display:inline;}
+.prev_next a{font-size: 0.5em;}
+#keysig{width:200px; height:100px;}
+#chords{width:200px; height: 200px;}
+#stringname{width:200px; height:100px;}
+#cof{width:200px; height:200px;}
+#keezer{width:100px;height:100px}

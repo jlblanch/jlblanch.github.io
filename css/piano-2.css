@@ -1,0 +1,7 @@
+.table_container table{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	
+}
+td, th{ text-align:center;}
