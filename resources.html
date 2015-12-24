@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+		<title>JB Music Instruction</title>
+		<link rel="stylesheet" type="text/css" href="../css/screen_styles.css" />
+		<link rel="stylesheet" href="../css/piano-1.css" />
+		<link rel="stylesheet" type="text/css" href="../css/screen_layout_large.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:320px)" href="../css/screen_layout_small.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:480px)" href="../css/screen_layout_med_small.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:800px)" href="../css/screen_layout_medium.css" />
+		<!--[if lt IE 9]>
+			<script src="http://htmlshiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<!--<script src="../js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+		<script type="JavaScript" src="../js/piano-1.js"></script>
+		
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<a class="logo" href="#"></a>
+			</header>
+			<nav id="navtop">
+				<a href="index.html">Home</a>
+				<a href="register.html" alt="Register Here">Register</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="resources.html">Resources</a>
+				<a href="piano-1.html" alt="piano"><img src="../images/pianothumb.png" />&nbsp;&nbsp;Piano</a>
+				
+			</nav>
+			<div class="container">
+				<div class="cont left">
+					<div class="content">
+						<h3>Site Navigation</h3>
+						
+						<a href="index.html">Home</a>
+						<a href="register.html" alt="Register Here">Register</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="resources.html">Additional Resources</a>
+						
+						<h4>Instrument</h4>
+						<a href="piano-1.html" alt="piano"><img src="../images/pianothumb.png" />&nbsp;&nbsp;Piano</a>
+											
+						<h4>Musical Reference</h4>
+						<a href="#">Circle of Fifths</a>
+						<a href="#">Scales</a>
+						<a href="#">Chord Positions</a>
+						
+					</div>
+				</div>
+				<div class="cont main">
+					<div class="content">
+						<h3>Piano Resources</h3>
+						<h4>Scales</h4>
+						Select from the options below to view scales:
+						<select id="selectmajmin">
+							<option value="">--Select Major/Minor--</option>
+							<option value="0">Major</option>
+							<option value="1">Minor</option>
+						</select>
+						Select Scale
+						<select id="key">
+							<option value="">-- Select Key --</option>
+						</select>
+						<div id="showscale"></div>
+						<h4>Key Signatures</h4>
+						<p>Key signatures are similar to scales with the exception that the key signature is noted at the beginning.  For example: if you look 
+						at the staff below, you will notice the sharps and flats.</p>
+						<div class="diagram_container">
+							<img id="keysig" src="../images/keysig.png" />
+						</div>
+						<p>Each set of sharps and flats corresponds to a specific key. Select the G Major scale from the selector and count the number of sharps or flats in the scale.
+						You will notice that there is only 1 sharp(<em>F&#9839;</em>). On the staff above, it is the 2nd group. If you select the E Minor scale, you will notice it is 
+						exactly the same as G Major.  Each Major scale has an equivalent minor scale. Don't worry if this seems confusing, as you play around with the scales and you will see the pattern. </p>
+						<h4>Chord Progression</h4>
+						<p>Chord Progressions can be a little confusing.  In any song you hear, there is a particular pattern that the song follows.  This pattern is called a chord progression.
+						Most commonly, musicians will use what is called a I - IV - V progression.  These chords have a tendency to naturally sound good together.  There are literally hundreds of variations 
+						that can be accomplished.  It's all a matter of what you, the musician, likes.  The diagrams below outline the most common chord progressions.</p>
+						<div class="diagram_container">
+							<caption>Major Chords:</caption><br><img id="chords" src="../images/major-chords.jpg" /><br>
+							<caption>Minor Chords:</caption><br><img id="chords" src="../images/minor-chords.jpg" />
+						</div>
+						<h4>Circle of Fifths</h4>
+						<p>The following diagram is called the <em><strong>Circle of Fifths</strong></em>.  The outer ring contains the Major Scale Chords. The inner ring contains the corresponding Minor Scale Chords.
+						Outside of the ring shows the Key Signatures associated with the scale chords.</p>
+						<div class="diagram_container">
+							<img id="cof" src="../images/circle-of-fifths.png" />
+						</div>
+	
+						<div class="prev_next" >
+							<a rel="prev" href="javascript:history.back()">Go Back</a>
+							<a rel="next" href="index.html">Home</a>
+						</div>						
+					</div>
+				</div>
+				<div class="cont right">				
+					<div class="content">
+						
+					</div>
+				</div>
+				<nav id="mobilenav">
+					<a href="index.html">Home</a>
+					<a href="register.html" alt="Register Here">Register</a>
+					<a href="contact.html">Contact Us</a>
+					<a href="resources.html">Additional Resources</a>
+					<a href="piano-1.html" alt="piano"><img src="../images/pianothumb.png" />&nbsp;&nbsp;Piano</a>
+					
+				</nav>
+				<div class="clear-fix"></div>
+			</div>
+			<footer>				
+				<section id="footleft">
+					<h3>External Links:</h3>
+					<a href="http://www.music-theory.com/resources.html">Music Theory Online</a>
+					<a href="https://www.ultimate-guitar.com/lessons/for_beginners/learning_music_theory_the_beginning.html">Ultimate Guitar</a>
+					<a href="http://www.guitar-music-theory.com/theory/">Guitar Music Theory</a>
+				</section>
+				<section id="footmid">
+					<h3>Internal Links:</h3>
+					<a href="index.html" alt="Home">Home</a>
+					<a href="register.html" alt="Register">Register</a>
+					<a href="contact.html" alt="contact">Contact Us</a>
+				</section>
+				<section id="footright">
+					<h3>Musical Reference</h3>
+					<a href="#">Circle of Fifths</a>
+					<a href="#">Scales</a>
+					<a href="#">Chord Positions</a>
+				<section>
+				&copy;2015 Jeremy Blanchard				
+			</footer>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$('#selectmajmin').change(function(){
+					var val=$(this).val();
+					$('#key').html(options[val]);
+				});
+				var options = [
+					"<option value=''>--Select Key--</option>" +
+					"<option value='0'>C</option>"+
+					"<option value='1'>C&#9839;</option>" +
+					"<option value='2'>D&#9837</option>"+
+					"<option value='3'>D;</option>"+
+					"<option value='4'>E&#9837;</option>" +
+					"<option value='5'>E</option>" +
+					"<option value='6'>F</option>" +
+					"<option value='7'>F&#9839;</option>"+
+					"<option value='8'>G&#9837;</option>"+
+					"<option value='9'>G</option>"+
+					"<option value='10'>A&#9837;</option>"+
+					"<option value='11'>A</option>"+
+					"<option value='12'>B&#9837;</option>"+
+					"<option value='13'>B</option>"+
+					"<option value='14'>C&#9837;</option>",
+					"<option value=''>--Select Key--</option>" +
+					"<option value='0'>C</option>"+
+					"<option value='1'>C&#9839;</option>" +
+					"<option value='2'>D</option>"+
+					"<option value='3'>D&#9839;</option>"+
+					"<option value='4'>E&#9837;</option>" +
+					"<option value='5'>E</option>" +
+					"<option value='6'>F</option>" +
+					"<option value='7'>F&#9839;</option>"+
+					"<option value='8'>G;</option>"+
+					"<option value='9'>G&#9839;</option>"+
+					"<option value='10'>A&#9837;</option>"+
+					"<option value='11'>A</option>"+
+					"<option value='12'>A&#9839;</option>"+
+					"<option value='13'>B&#9837;</option>"+
+					"<option value='14'>B</option>"
+					
+				];
+				$('#key').change(function(){
+					var mmval=$('#selectmajmin').val();
+					var keyval=$(this).val();
+					if((mmval==0 && keyval==0) || (mmval==1 && keyval==11)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>C Major/A Minor Scale</th></tr><tr><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>A</td><td>B</td><td>C</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==1) || (mmval==1 && keyval==12)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>C&#9839 Major/A&#9839 Minor Scale</th></tr><tr><td>C&#9839;</td><td>D&#9839;</td><td>E&#9839;</td><td>F&#9839;</td><td>G&#9839;</td><td>A&#9839;</td><td>B&#9839;</td><td>C&#9839;</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==2) || (mmval==1 && keyval==13)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>D&#9837; Major/B&#9837 Minor Scale</th></tr><tr><td>D&#9837;</td><td>E&#9837;</td><td>F</td><td>G&#9837;</td><td>A&#9837;</td><td>B&#9837;</td><td>C</td><td>D&#9837;</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==3) || (mmval==1 && keyval==14)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>D Major/B Minor Scale</th></tr><tr><td>D</td><td>E</td><td>F&#9839;</td><td>G</td><td>A</td><td>B</td><td>C&#9839;</td><td>D</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==4) || (mmval==1 && keyval==0)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>E&#9837 Major/C Minor Scale</th></tr><tr><td>E&#9837</td><td>F</td><td>G</td><td>A&#9837</td><td>B&#9837</td><td>C</td><td>D</td><td>E&#9837</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==5) || (mmval==1 && keyval==1)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>E Major/C&#9839 Minor Scale</th></tr><tr><td>E</td><td>F&#9839</td><td>G&#9839</td><td>A</td><td>B</td><td>C&#9839</td><td>D&#9839</td><td>E</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==6) || (mmval==1 && keyval==2)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>F Major/D Minor Scale</th></tr><tr><td>F</td><td>G</td><td>A</td><td>B&#9837</td><td>C</td><td>D</td><td>E&#9837</td><td>F</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==7) || (mmval==1 && keyval==3)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>F&#9839 Major/D&#9839 Minor Scale</th></tr><tr><td>F&#9839</td><td>G&#9839</td><td>A&#9839</td><td>B</td><td>C&#9839</td><td>D&#9839</td><td>E&#9839</td><td>F&#9839</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==8) || (mmval==1 && keyval==4)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>G&#9837 Major/E&#9837 Minor Scale</th></tr><tr><td>G&#9837</td><td>A&#9837</td><td>B&#9837</td><td>C&#9837</td><td>D&#9837</td><td>E&#9837</td><td>F</td><td>G&#9837</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==9) || (mmval==1 && keyval==5)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>G Major/E Minor Scale</th></tr><tr><td>G</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F&#9839</td><td>G</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==10) || (mmval==1 && keyval==6)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>A&#9837 Major/F Minor Scale</th></tr><tr><td>A&#9837</td><td>B&#9837</td><td>C</td><td>D</td><td>E&#9837</td><td>F</td><td>G</td><td>A&#9837</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==11) || (mmval==1 && keyval==7)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>A Major/F&#9839 Minor Scale</th></tr><tr><td>A</td><td>B</td><td>C&#9839</td><td>D</td><td>E</td><td>F&#9839</td><td>G&#9839</td><td>A</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==12) || (mmval==1 && keyval==8)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>B&#9837 Major/G Minor Scale</th></tr><tr><td>B&#9837</td><td>C</td><td>D</td><td>E&#9837</td><td>F</td><td>G</td><td>A</td><td>B&#9837</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==13) || (mmval==1 && keyval==9)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>B Major/G&#9839 Minor Scale</th></tr><tr><td>B</td><td>C&#9839</td><td>D&#9839</td><td>E</td><td>F&#9839</td><td>G&#9839</td><td>A&#9839</td><td>B</td></tr></table></div>");
+					}
+					if((mmval==0 && keyval==14) || (mmval==1 && keyval==10)){
+						$('#showscale').html("<div style='width:100%;'><table style='width:90%;text-align:center;'><tr><th colspan='8'>C&#9837 Major/A&#9837 Minor Scale</th></tr><tr><td>C&#9837</td><td>D&#9837</td><td>E&#9837</td><td>F&#9837</td><td>G&#9837</td><td>A&#9837</td><td>B&#9837</td><td>C&#9837</td></tr></table></div>");
+					}					
+				});
+			});			
+		</script>
+	</body>
+</html>
